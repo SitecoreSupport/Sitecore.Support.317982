@@ -227,6 +227,7 @@
                             if (hash[param] !== "0") {
                                 hashObj[param] = 0;
                                 Backbone.history.navigate(that.createFirstPageUrlHash(hashObj), { trigger: true, replace: true });
+                            }
                         }, 100);
                     } else {
                         newSelectedValue = Math.ceil(data.offset / data.pageSize) + 1;
